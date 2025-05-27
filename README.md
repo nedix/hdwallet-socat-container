@@ -1,35 +1,30 @@
-# [hdwallet-socat-container](https://github.com/nedix/hdwallet-socat-container)
+# [hdwallet-socat-container][project]
 
 HTTP API to generate HD wallets and addresses.
 
+
 ## Usage
 
-This example will start the API service on port `8080`.
+This example will start the container on port `80`.
 
-#### 1. Start the server
+
+### 1. Start the container
 
 ```shell
-docker run --pull always --rm --name hdwallet \
-    -p 8080:80 \
-    -d \
+docker run --rm --pull always --name hdwallet \
+    -p 127.0.0.1:80:80 \
     nedix/hdwallet
 ```
 
-#### 2. Generate HD wallets and addresses
 
-- Navigate to the interactive documentation on http://127.0.0.1:8080/docs
+### 2. Generate HD wallets and addresses
+
+- Navigate to the interactive documentation on http://127.0.0.1:80/docs
 
 OR
 
-- Import the [OpenAPI documentation][Swagger] into your favorite API testing tool
+- Import the [OpenAPI documentation][swagger] into your favorite API testing tool
 
-<hr>
 
-## Attribution
-
-- [Python HDWallet] ([License](https://raw.githubusercontent.com/meherett/python-hdwallet/master/LICENSE))
-- [Socat] ([License](https://repo.or.cz/socat.git/blob_plain/HEAD:/COPYING))
-
-[Python HDWallet]: https://github.com/meherett/python-hdwallet
-[Socat]: http://www.dest-unreach.org/socat/
-[Swagger]: https://raw.githubusercontent.com/nedix/hdwallet-socat-container/refs/heads/main/rootfs/var/www/html/swagger.json
+[swagger]: https://raw.githubusercontent.com/nedix/hdwallet-socat-container/refs/heads/main/rootfs/var/www/html/swagger.json
+[project]: https://hub.docker.com/r/nedix/hdwallet
