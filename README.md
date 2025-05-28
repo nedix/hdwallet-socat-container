@@ -1,4 +1,4 @@
-# [hdwallet-socat-container](https://github.com/nedix/hdwallet-socat-container)
+# [hdwallet-socat-container][project]
 
 HTTP API to generate HD wallets and addresses.
 
@@ -23,13 +23,4 @@ OR
 
 - Import the [OpenAPI documentation][Swagger] into your favorite API testing tool
 
-<hr>
-
-## Attribution
-
-- [Python HDWallet] ([License](https://raw.githubusercontent.com/meherett/python-hdwallet/master/LICENSE))
-- [Socat] ([License](https://repo.or.cz/socat.git/blob_plain/HEAD:/COPYING))
-
-[Python HDWallet]: https://github.com/meherett/python-hdwallet
-[Socat]: http://www.dest-unreach.org/socat/
-[Swagger]: https://raw.githubusercontent.com/nedix/hdwallet-socat-container/refs/heads/main/rootfs/var/www/html/swagger.json
+[project]: https://hub.docker.com/r/nedix/hdwallet
