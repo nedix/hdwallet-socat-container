@@ -19,11 +19,11 @@ docker run --rm --pull always --name hdwallet \
 
 ### 2. Generate HD wallets and addresses
 
-- Navigate to the interactive documentation on http://127.0.0.1:80/docs
+Navigate to the interactive documentation on http://127.0.0.1:80/docs
 
 OR
 
-- Import the [OpenAPI documentation][swagger] into an API testing tool
+Import the [OpenAPI documentation][swagger] into an API testing tool
 
 
 [project]: https://hub.docker.com/r/nedix/hdwallet
