@@ -2,11 +2,13 @@
 
 HTTP API to generate HD wallets and addresses.
 
+
 ## Usage
 
-This example will start the API service on port `80`.
 
 ### 1. Start the container
+
+The following command will start the container on port 80.
 
 ```shell
 docker run --rm --pull always --name hdwallet \
