@@ -11,7 +11,10 @@ HTTP API to generate HD wallets and addresses.
 The following command will start the container on port 80.
 
 ```shell
-docker run --rm --pull always --name hdwallet \
+docker run \
+    --name hdwallet \
+    --pull always \
+    --rm \
     -p 127.0.0.1:80:80 \
     nedix/hdwallet
 ```
