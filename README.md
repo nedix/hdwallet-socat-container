@@ -14,7 +14,7 @@ The following command will start the container on port 80.
 docker run \
     --name hdwallet \
     --pull always \
-    --rm \
+    --restart unless-stopped \
     -p 127.0.0.1:80:80 \
     nedix/hdwallet
 ```
