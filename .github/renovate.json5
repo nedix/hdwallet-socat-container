@@ -1,6 +1,6 @@
 {
   extends: [
-    "https://raw.githubusercontent.com/nedix/actions/main/renovate.json5",
+    "https://raw.githubusercontent.com/nedix/actions/main/renovate-base.json5",
   ],
   customManagers:  [
     {
@@ -8,7 +8,8 @@
       fileMatch: ["^Containerfile$"],
       matchStrings: ["ARG ALPINE_VERSION=(?<currentValue>.*?)\\n"],
       datasourceTemplate: "docker",
-      packageNameTemplate: "alpine",
+      packageNameTemplate: "nedix/alpine-base-container",
+      registryUrlTemplate: "https://ghcr.io",
     },
     {
       depNameTemplate: "HDWallet",
